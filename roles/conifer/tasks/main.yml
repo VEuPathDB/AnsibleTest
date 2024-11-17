@@ -1,3 +1,5 @@
+- include: test_load_values.yml
+
 - include: do_templates.yml
   tags:
     - provision_templates

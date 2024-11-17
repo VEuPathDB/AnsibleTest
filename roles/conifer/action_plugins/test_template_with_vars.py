@@ -14,5 +14,6 @@ class ActionModule(TemplateActionModule, ActionBase):
     "fancy_project": '{{ project }}'
     }
     custom_vars['ansible_facts'] = task_vars['ansible_facts']
-    return super(ActionModule, self).run(tmp, custom_vars)
+
+    return super(ActionModule, self).run(tmp, task_vars)
 

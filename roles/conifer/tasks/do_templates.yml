@@ -1,4 +1,4 @@
 - name: provision configurations from templates
   test_template_with_vars:
     src: my_template.j2
-    dest: /home/sfischer/ansi/target
+    dest: /home/vagrant/target
