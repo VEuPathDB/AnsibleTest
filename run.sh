@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ansible-playbook -i localhost, /home/vagrant/AnsibleTest/playbook.yml
+projectDir=$(dirname `realpath $0`)
+ansible-playbook -i localhost, $projectDir/playbook.yml
