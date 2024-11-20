@@ -2,3 +2,4 @@
   test_template_with_vars:
     src: template.xml.j2
     dest: "{{ outputFile }}"
+    vars: "{{ vars|conifer_scrub('=c=') }}"
