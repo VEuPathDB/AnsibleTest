@@ -1,4 +1,6 @@
 #!/bin/bash
 
 projectDir=$(dirname `realpath $0`)
-ansible-playbook -i localhost, $projectDir/playbook.yml
+
+export ANSIBLE_CONFIG=$projectDir/conifer.cfg
+ansible-playbook -i localhost, -e outputFile=$(pwd)/output.xml $projectDir/playbook.yml

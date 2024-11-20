@@ -4,4 +4,4 @@
     depth: 1
     files_matching: '^{{ item }}$'
   with_items:
-    - my_bootstrap.yml
+    - bootstrap.yml

@@ -1,7 +1,3 @@
-- include: test_load_values.yml
+- include_tasks: load_values.yml
 
-- include: do_templates.yml
-  tags:
-    - provision_templates
-    - generate_configs
-
+- include_tasks: do_templates.yml
